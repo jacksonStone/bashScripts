@@ -1,0 +1,21 @@
+#!/bin/bash
+name=$1
+clone_project=$2
+description=$3
+
+if [ $clone_project = "none" ]; then
+  jas_create_repo $name "none"
+else
+  jas_create_repo $name $clone_project
+fi
+
+cd $name
+
+printf "#$name\n$description" >> README.md
+
+atom .
+
+cd ~/Desktop/blogs
+touch $name.docx
+open $name.docx
+

@@ -1,0 +1,2 @@
+#bashScripts
+When one is a software developer, you can often find yourself doing tasks throughout your job that aren't necessarily writing code. It could be git related coordination, manipulating files in a predictable way, or various other repetitive tasks. However, if one has access to Bash or Cygwin they can automate a majority of these tasks with the bash scripting language, and create new command line commands. These code samples include some pretty basic scripts used to generate this blog's git branch
